@@ -23,7 +23,7 @@ const Bar = () => {
     const handleMenuItemClick =(sectionId)=>{
       setActiveSection(sectionId);
       setIsOpen(false);
-      const scroll =document.getElementById(sectionIdid);
+      const scroll =document.getElementById(sectionId);
       if(scroll) scroll.scrollIntoView({behavior:'smooth'})
     }
 
@@ -32,7 +32,7 @@ const Bar = () => {
     {id:"about", label:"About"},
     {id:"experience", label:"Experience"},
     {id:"skill", label:"Skill"},
-    {id:"work", label:"Work"},
+    {id:"Project", label:"Project"},
     {id:"education", label:"Education"},
 
   ];
@@ -41,7 +41,7 @@ const Bar = () => {
 
   return (
     <nav className= {`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw]  ${
-        isScrolled ?  "bg-transparent":"bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+        isScrolled ?  "bg-transparent backdrop-blur-2xl ":"bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
       }`}>
 
       <div className='text-white py-7 flex justify-between items-center '>
@@ -59,10 +59,10 @@ const Bar = () => {
         {/* MenuBar */}
 
 
-          <ul className=' hidden md:flex space-x-3 text-gray-300'>
+          <ul className=' hidden md:flex space-x-3 text-gray-300 gap-3.5'>
             {menuBar.map((item)=>(
              <li key={item.id} className={` hover:text-[#8245ec] 
-             ${activeSection === item.id? "text-[#8245ec]":""
+             ${activeSection === item.id? "text-[#8245ec] border-b-2 border-purple-500 transition-all duration-300 animate-bounce":""
              
              
              }`}>
@@ -80,7 +80,7 @@ const Bar = () => {
 
             {/* Icons */}
 
-            <div className='hidden md:flex space-x-5'>
+            <div className='hidden md:flex space-x-5 gap-2'>
 
               <a href="https://github.com/"
                target='_blank '

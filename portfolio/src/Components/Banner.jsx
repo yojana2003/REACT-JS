@@ -1,10 +1,11 @@
 import React from 'react'
 import img1 from '../assets/img1.jpg'
 
+
 const Banner = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen text-center bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 transition-colors duration-500 gap-x-40">
-      <div className="space-y-4 ">
+    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen text-center bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 transition-colors duration-500 gap-x-20">
+      <div className="space-y-4 pb-10 ">
         
        
         <p className="text-gray-600 dark:text-gray-300 text-lg sm:-mb-0">
@@ -17,7 +18,7 @@ const Banner = () => {
         </h1>
 
         
-        <h2 className="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mt-2 animate-typing overflow-hidden whitespace-nowrap  pr-5">
+        <h2 className="text-xl sm:text-2xl ml-4 text-gray-700 dark:text-gray-300 mt-2 animate-typing overflow-hidden whitespace-nowrap  pr-5">
           Junior Web Developer Building Modern Sites
         </h2>
 
@@ -32,11 +33,14 @@ const Banner = () => {
         >DOWNLOAD CV</a>
       </div>
         
-        <div className=' flex justify-center md:justify-end mt-6 rounded-full'
+        <div className=' flex justify-center md:justify-end mt-6 rounded-full '
         style={{
               boxShadow: '0 0 1px #8245ec, 0 0 1px #8245ec, 0 0 20px #8245ec',
             }}
         >
+
+
+          {/* temporary image */}
             <img src={img1} 
             alt="yojana chaudhari"
             className=' w-72 h-72 md:w-96 md:h-96 rounded-full object-cover' />
