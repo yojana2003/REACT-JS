@@ -5,7 +5,6 @@ const Experience = () => {
     {
       id: 0,
       role: "Fullstack Developer",
-      company: "Webverse Digital",
       date: "oct 2025 - Present",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
@@ -15,18 +14,32 @@ const Experience = () => {
         "React JS",
         "Node JS",
         "Tailwind CSS",
-        "MongoDb",
-        " Next Js",
       ],
-    }
-  ]
+    },
+    {
+      id: 2,
+      role: "Self-Taught Web Developer",
+      company: "Personal Projects",
+      date: "Jan 2024 – Present",
+      desc: "Built multiple personal projects using HTML, CSS, JavaScript, and React. Focused on full-stack development through online learning and practiced Git version control on GitHub.",
+      skills: [
+        "React JS",
+        "Node JS",
+        "MongoDB",
+        "Git & GitHub",
+        "Responsive Design",
+      ],
+    },
+    
+  ];
+
   return (
     <section
       id="experience"
-      className="py-24 px-[12vw] md:px-[7vw] bg-skill-gradient bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"
+      className="py-24 px-[12vw] md:px-[20vw] bg-skill-gradient bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">Experience</h2>
+        <h2 className="text-4xl font-bold text-white animate-bounce">Experience</h2>
         <div className="w-45 h-1 bg-purple-600 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           A collection of my work experience
