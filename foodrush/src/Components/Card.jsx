@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react'  // Added useState here
+import React, { useContext, useState } from 'react'  
 import { dataContext } from '../Context/UserContext'
 import { LuLeafyGreen } from "react-icons/lu";
 import { GiChickenOven } from "react-icons/gi";
-import { FaStar } from "react-icons/fa"; //  Added icon import
+import { FaStar } from "react-icons/fa"; 
 import { toast } from 'react-toastify';
 
 const Card = ({ name, image, price, id, type }) => {
@@ -29,7 +29,7 @@ const Card = ({ name, image, price, id, type }) => {
         </div>
       </div>
 
-      {/* Added Star Rating UI */}
+      {/* Added Star Rating */}
       <div className='flex gap-1 items-center'>
         {[1,2,3,4,5].map((star) => (
           <FaStar 
@@ -53,7 +53,7 @@ const Card = ({ name, image, price, id, type }) => {
         </span>
       </div>
 
-      {/*  Your ORIGINAL Button — untouched! */}
+      
       <button
         className='w-full h-[30px] bg-green-300 text-gray-700 hover:bg-green-400 cursor-pointer rounded-md transition-all duration-200 font-semibold'
         onClick={() => {
