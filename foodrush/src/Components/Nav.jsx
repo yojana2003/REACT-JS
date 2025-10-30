@@ -31,7 +31,7 @@ const Nav = () => {
       {/* search */}
 
 
-      <form className='w-[60%] h-[60px] bg-white 
+      <form className=' w-[60%] h-[60px] bg-white 
        flex items-center px-5 gap-[20px]
        rounded-md shadow-md md:w-[70%]' 
        onSubmit={(e)=>e.preventDefault()}>

@@ -6,7 +6,7 @@ import { food_items } from '../Food.jsx'
 import { dataContext } from '../Context/UserContext.jsx'
 import { RxCross2 } from "react-icons/rx";
 import Card2 from '../Components/Card2.jsx'
-import { toast } from 'react-toastify'
+import {  toast } from 'react-toastify'
 
 const Home = () => {
   let {
@@ -120,6 +120,9 @@ const Home = () => {
           Place Order
         </button>
       </div>
+
+        
+      
     </div>
   )
 }
